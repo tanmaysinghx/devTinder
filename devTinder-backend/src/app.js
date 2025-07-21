@@ -21,6 +21,6 @@ app.listen(PORT, async () => {
 });
 
 app.use('/api', healthCheckRoutes);
-app.use('/api', userRoutes);
+app.use('/api/v1', userRoutes);
 
 module.exports = app;

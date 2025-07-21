@@ -1,5 +1,3 @@
-/* User Controller */
-
 const User = require('../models/userSchema');
 
 const createUserService = async (userData) => {

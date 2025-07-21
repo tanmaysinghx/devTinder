@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const dbURI = process.env.DATABASE_URL || 'mongodb://localhost:27017/mydatabase';
+const dbURI = process.env.DATABASE_URL || "mongodb+srv://tanmaysinghx:bRSlttZxP2eDwgqw@ts-cluster.zrpmnal.mongodb.net/devTinder";
 
 const connectToDatabase = async () => {
     try {

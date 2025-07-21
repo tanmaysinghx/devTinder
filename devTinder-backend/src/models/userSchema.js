@@ -23,15 +23,11 @@ const userSchema = new mongoose.Schema({
         minlength: 8,
         maxlength: 128,
     },
-    createdAt: {
-        type: Date,
-        default: Date.now
-    },
-    updatedAt: {
-        type: Date,
-        default: Date.now
+},
+    {
+        timestamps: true,
     }
-});
+);
 
 const User = mongoose.model('User', userSchema);
 module.exports = User;
